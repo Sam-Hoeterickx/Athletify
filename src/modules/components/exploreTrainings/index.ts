@@ -1,0 +1,1 @@
+export { ExploreTrainings } from './pages/ExploreTrainings.page'

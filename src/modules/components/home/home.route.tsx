@@ -1,3 +1,4 @@
+//Components
 import { Home } from ".";
 
 export const HOME_ROUTE = {

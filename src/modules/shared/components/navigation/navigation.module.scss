@@ -1,0 +1,26 @@
+.navigation {
+
+    max-width: 90dvw;   
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+    &--logo {
+        img{
+            width: 200px;
+        }
+    }
+
+    &--link-wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        a{
+            gap: 10px;
+        }
+    }
+}
