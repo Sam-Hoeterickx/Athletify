@@ -6,9 +6,12 @@ import App from "../app/App";
 
 //Routes
 import { HOME_ROUTE } from "../home/home.route";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 
 export const Root: FC = () => {
+
+    const QUERYCLIENT = new QueryClient()
 
     const ROUTE = createHashRouter([
         {
@@ -24,7 +27,9 @@ export const Root: FC = () => {
     ])
 
     return (
-        <RouterProvider router={ ROUTE } />
+        <QueryClientProvider client={ QUERYCLIENT }>
+            <RouterProvider router={ ROUTE } />
+        </QueryClientProvider>
     )
 }
 
